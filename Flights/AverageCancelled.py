@@ -1,6 +1,6 @@
 from mrjob.job import MRJob
 from mrjob.job import MRStep
-class MRAverageDelay(MRJob):
+class MRAverageCancelled(MRJob):
 
     def steps(self):
         return [
@@ -40,4 +40,4 @@ class MRAverageDelay(MRJob):
         yield self.airlines[key], (sum/count)
 
 if __name__ == "__main__":
-    MRAverageDelay.run()
+    MRAverageCancelled.run()
