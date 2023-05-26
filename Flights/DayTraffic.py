@@ -1,6 +1,6 @@
 from mrjob.job import MRJob
 from mrjob.job import MRStep
-class MRAverageDelay(MRJob):
+class MRDayTraffic(MRJob):
 
     def steps(self):
         return [
@@ -24,4 +24,4 @@ class MRAverageDelay(MRJob):
 
 
 if __name__ == "__main__":
-    MRAverageDelay.run()
+    MRDayTraffic.run()
