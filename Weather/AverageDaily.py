@@ -1,7 +1,7 @@
 from mrjob.job import MRJob
 from mrjob.job import MRStep
 from datetime import datetime
-class MRMax(MRJob):
+class MRAverageDaily(MRJob):
 
 
     def steps(self):
@@ -58,4 +58,4 @@ class MRMax(MRJob):
 
 
 if __name__ == "__main__":
-    MRMax.run()
+    MRAverageDaily.run()
